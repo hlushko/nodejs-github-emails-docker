@@ -1,0 +1,6 @@
+.docker-sync/
+.env
+.idea/
+!code/.gitkeep
+code/
+mongo/data

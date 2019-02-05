@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    nghed-node:
+        volumes:
+            - nghed-unison-sync:/var/www:nocopy
+
+volumes:
+    nghed-unison-sync:
+        external: true
