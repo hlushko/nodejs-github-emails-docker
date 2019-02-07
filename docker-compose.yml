@@ -33,7 +33,6 @@ services:
             - CLOUDINARY_URL=${CLOUDINARY_URL}
             - GITHUB_USERNAME=${GITHUB_USERNAME}
             - GITHUB_TOKEN=${GITHUB_TOKEN}
-            - GITHUB_TOKEN=${GITHUB_TOKEN}
             - MAIL_TRANSPORT=${MAIL_TRANSPORT}
             - PORT=3030
             - SENTRY_DSN=${SENTRY_DSN}
