@@ -25,9 +25,17 @@ services:
         container_name: nghed-node
         depends_on:
             - nghed-mongo
+        ports:
+            - "3030:3030"
         environment:
             - REPOSITORY=${CODE_REPOSITORY}
             - MONGODB_URI=mongodb://${MONGO_USER}:${MONGO_PASS}@nghed-mongo:27017/${MONGO_DB}
+            - CLOUDINARY_URL=${CLOUDINARY_URL}
+            - GITHUB_USERNAME=${GITHUB_USERNAME}
+            - GITHUB_TOKEN=${GITHUB_TOKEN}
+            - GITHUB_TOKEN=${GITHUB_TOKEN}
+            - MAIL_TRANSPORT=${MAIL_TRANSPORT}
+            - PORT=3030
             - SENTRY_DSN=${SENTRY_DSN}
         volumes:
             - ${SSH_KEY}:/home/node/.ssh/id_rsa:ro
