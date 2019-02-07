@@ -18,4 +18,4 @@ fi
 
 npm install
 
-npm start
+npm run docker
